@@ -1,24 +1,32 @@
 body{
+	background-color: #FFD53F ;
 	background-image: url("Pokemon_Psyduck_anime_simple_background_Hitec_1440x900.jpg");
+	overflow-x: hidden;
+	background-repeat: no-repeat;
+	background-size: cover;
+
 }
+
 h1{
 	text-align: center;
 	font-family: 'ZCOOL KuaiLe', cursive;
 	word-spacing: 10px;
 	line-height: 100px;
 	font-size: 50px;
-
-
 }
 
-.Flexer{
+.Play{
+	font-family: 'ZCOOL KuaiLe', cursive;
+	box-sizing: border-box;
+	padding-left: 30px;
 	display: flex;
+	flex-flow: column;
 	justify-content: center;
-	align-items: center;
+	align-items: stretch;
 	align-content: center;
 }
 
-.Flexer > p {
+.Play > p {
   /*
     1/3  - 3 columns per row
     10px - spacing between columns 
@@ -26,4 +34,14 @@ h1{
   box-sizing: border-box;
   margin-bottom: 10px;
   width: calc(1/3*100% - (1 - 1/3)*10px);
+}
+
+#Fortune, #Speak{
+	box-sizing: border-box;
+	display: flex;
+	padding: 15px;
+	height: 150px;
+	width: 40%;
+	background-color: white;
+	border-radius: 10px;
 }
