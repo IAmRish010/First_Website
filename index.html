@@ -4,9 +4,33 @@
 	<title>The First Page</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href="https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe" rel="stylesheet">
+	<script>
+function startTime() {
+  var now = new Date();
+  var h = now.getHours();
+  var m = now.getMinutes();
+  var s = now.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('time').innerHTML =
+  h + ":" + m + ":" + s;
+  var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+</script>
 </head>
-<body>
+<body onload="startTime()">
 	<h1>The Fortune Cookie</h1>
+	<div class="Flexer">
+		<p>Test your fortune</p>
+		<p>zhow do you sound?</p>
+	</div>
+
+
+	<p id="time"></p>
 
 
 </body>
