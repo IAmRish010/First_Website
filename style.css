@@ -17,7 +17,7 @@ h1{
 }
 
 .Play{
-
+	
 	font-family: 'ZCOOL KuaiLe', cursive;
 	box-sizing: border-box;
 	padding-left: 30px;
@@ -45,11 +45,11 @@ h1{
 	justify-content: space-between;
 	vertical-align: middle;
 	color: #3E2B02;
-	box-sizing: border-box;
+	box-sizing: margin-box;
 	display: flex;
 	padding: 15px;
 	height: 150px;
-	width: 40%;
+	width: 330px;
 	background-color: white;
 	border-radius: 10px;
 	/*
@@ -60,11 +60,15 @@ h1{
 
 #Fortune:hover , #Speak:hover{
 	height: 180px;
-	width: 45% ;
+	width: 380px ;
 }
 
 #time{
 
-	width: 100% ;
-	border-width: 90% ;
+	align-items: center;
+  	display: flex;
+  	justify-content: center;
+  	transform: translateY(260px);
+  	font-size: 50px;
+  	font-family: 'ZCOOL KuaiLe', cursive;
 }
